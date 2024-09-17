@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #2272bd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: blue;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+/* Show menu toggle on small screens */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* Header styles */
+.header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}
+
+.header-content {
+    border-bottom: 5px solid blue; /* Blue division line */
+    padding-bottom: 20px;
+}
+
+/* Intro section */
+.intro {
+    padding: 20px;
+}
+
+.basic-guide, .front-end-basics {
+    padding: 20px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    margin-right: 60px;
+    padding: 150px 100px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.basic-guide .buttons button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.front-end-basics .buttons button {
+    background-color: #008CBA; /* Blue */
+    color: white;
+}

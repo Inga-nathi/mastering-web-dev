@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Code Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Write your code</h1>
+
+        <!-- Input areas for HTML, CSS, and JavaScript -->
+        <div class="code-inputs">
+            <div class="input-area">
+                <h3>HTML</h3>
+                <textarea id="htmlCode" placeholder="Write HTML code here"></textarea>
+            </div>
+            <div class="input-area">
+                <h3>CSS</h3>
+                <textarea id="cssCode" placeholder="Write CSS code here"></textarea>
+            </div>
+            <div class="input-area">
+                <h3>JavaScript</h3>
+                <textarea id="jsCode" placeholder="Write JavaScript code here"></textarea>
+            </div>
+        </div>
+
+        <!-- Button to run code -->
+        <button id="runCode" onclick="run()">Run Code</button>
+
+        <!-- Output area -->
+        <div id="output" class="output-area">
+            <h3>Output</h3>
+            <iframe id="outputFrame"></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

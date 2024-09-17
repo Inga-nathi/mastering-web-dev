@@ -1,0 +1,101 @@
+/* General form styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%; /* Set the input width to 100% of the parent container */
+    padding: 10px;
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* Ensures padding is included within the width */
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.remember-forgot label {
+    font-size: 14px;
+    color: #333;
+}
+
+.remember-forgot a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%; /* Ensure the login button width matches the input fields */
+    background-color: red;
+    color: white;
+    padding: 10px; /* Same padding as the input fields */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: red;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
